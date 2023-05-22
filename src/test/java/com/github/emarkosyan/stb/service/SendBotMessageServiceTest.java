@@ -1,4 +1,4 @@
-package com.github.emarkosyan.stb.command;
+package com.github.emarkosyan.stb.service;
 
 import com.github.emarkosyan.stb.bot.SpringTelegramBot;
 import com.github.emarkosyan.stb.service.SendBotMessageService;

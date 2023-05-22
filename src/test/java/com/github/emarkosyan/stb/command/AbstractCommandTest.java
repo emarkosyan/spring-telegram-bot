@@ -3,6 +3,7 @@ package com.github.emarkosyan.stb.command;
 import com.github.emarkosyan.stb.bot.SpringTelegramBot;
 import com.github.emarkosyan.stb.service.SendBotMessageService;
 import com.github.emarkosyan.stb.service.SendBotMessageServiceImpl;
+import com.github.emarkosyan.stb.service.TelegramUserService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
@@ -16,6 +17,7 @@ import java.time.LocalDate;
 abstract class AbstractCommandTest {
 
     protected SpringTelegramBot springTelegramBot = Mockito.mock(SpringTelegramBot.class);
+    protected TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
     protected SendBotMessageService sendBotMessageService = new SendBotMessageServiceImpl(springTelegramBot);
 
     abstract String getCommandName();
